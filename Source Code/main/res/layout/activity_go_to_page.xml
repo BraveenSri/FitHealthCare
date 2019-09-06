@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.braveen.fit_health_app.GoToPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/silver_background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right">
+
+                    <ImageView
+                        android:id="@+id/GroupImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="LeaderBoard"
+                        android:src="@drawable/leaderboard"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/PersonImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="35dp"
+                        android:onClick="EditBio"
+                        android:src="@drawable/bio"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:id="@+id/ExitImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:onClick="Exit"
+                        android:src="@drawable/exit"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/BMI"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/calibri"
+                        android:text="BMI :"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/BMIVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/calibri"
+                        android:hint="Value"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:textColorHint="#666"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/BMR"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/calibri"
+                        android:text="BMR :"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/BMRVal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/calibri"
+                        android:hint="Value"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:textColorHint="#666"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/WalkImg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/walking"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/StepCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/calibri"
+                        android:hint="0 steps"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:textColorHint="#666"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/WorkoutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/segoepr"
+                    android:text="Click here to select your workout type"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="false"
+                    android:onClick="Workout"/>
+
+                <Button
+                    android:id="@+id/ReportBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Daily Report"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:onClick="DailyReport"/>
+
+                <Button
+                    android:id="@+id/TargetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Set Target"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:onClick="Target"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

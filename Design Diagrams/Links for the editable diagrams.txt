@@ -1,0 +1,23 @@
+MVC
+https://creately.com/diagram/jdltik6t4/EMdPDuvZ7MeUIszqxymmLYRfYY%3D
+
+Class Diagram
+https://creately.com/diagram/jdltik6t2/zsYTeDEJfHXniCua90DvOhRBDw%3D
+
+UseCase Diagram
+https://creately.com/diagram/jdltik6t1/gqM2Zj0Baciy0CzV2kFHMbZG7Uo%3D
+
+Activity Diagram1
+https://creately.com/diagram/jhtbdvqv1/dzLTpMiSSviDTyEmAVFleh0Ot9g%3D
+
+Activity Diagram2
+https://creately.com/diagram/jhtbdvqv2/El1xzHOWX0WqsXUxsqHCdFcCHIk%3D
+
+Activity Diagram3
+https://creately.com/diagram/jhtbdvqv3/836K4upjKVaxyvxXdIQFO09y8F0%3D
+
+Activity Diagram4
+https://creately.com/diagram/jdltik6t3/JPdHWIm5t82IjGnugGP1Xs2RyL4%3D
+
+Implementation View
+https://creately.com/diagram/jhtdy7k41/SXukc5c7V2GqIUBlDvIXoysqkY%3D

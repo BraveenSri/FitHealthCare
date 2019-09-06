@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.braveen.fit_health_app.DailyReportPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/silver_background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ReportTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/footlightmtlight"
+                    android:textStyle="bold"
+                    android:text="Daily Report"
+                    android:textAllCaps="false"
+                    android:textColor="#0f0582"
+                    android:textSize="40dp"
+                    android:textAlignment="center"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Workout"
+                            android:textSize="22dp"
+                            android:textColor="#000"
+                            android:textAllCaps="false"
+                            android:padding="5.5dp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="Duration"
+                            android:textSize="22dp"
+                            android:textColor="#000"
+                            android:textAllCaps="false"
+                            android:padding="5.5dp"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="Calories(cal)"
+                            android:textSize="22dp"
+                            android:textColor="#000"
+                            android:textAllCaps="false"
+                            android:padding="5.5dp"
+                            android:layout_gravity="center"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Walking"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="---"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/WalkingCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Running"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/RunningDuration"
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/RunningCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Cycling"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/CyclingDuration"
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/CyclingCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Swimming"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/SwimmingDuration"
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/SwimmingCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:fontFamily="@font/calibri"
+                            android:text="Other"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/OtherDuration"
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/OtherCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="2"
+                            android:fontFamily="@font/calibri"
+                            android:text="Total"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/TotalCalories"
+                            android:layout_column="3"
+                            android:fontFamily="@font/calibri"
+                            android:text="0"
+                            android:textSize="22dp"
+                            android:textColor="#444"
+                            android:textAllCaps="false"
+                            android:padding="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/ResetBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Reset Data"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:onClick="Reset"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

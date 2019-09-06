@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.braveen.fit_health_app.WorkoutPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/silver_background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/WorkoutPageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/footlightmtlight"
+                    android:textStyle="bold"
+                    android:text="Daily Workout"
+                    android:textAllCaps="false"
+                    android:textColor="#0f0582"
+                    android:textSize="40dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/DurationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/calibriz"
+                    android:text="Enter the workout duration (in minutes)"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="19dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Running"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/running"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/RunningDuration"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="150dp"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/calibri"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:textAlignment="center"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Cycling"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/cycling"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/CyclingDuration"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="150dp"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/calibri"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:textAlignment="center"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Swimming"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/swimming"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/SwimmingDuration"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="150dp"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/calibri"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:textAlignment="center"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/calibri"
+                        android:text="Other"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:drawableLeft="@drawable/other"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/OtherDuration"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="150dp"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/calibri"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:textAlignment="center"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/SaveDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Save"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:layout_marginTop="40dp"
+                    android:onClick="SaveWorkoutDuration"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.braveen.fit_health_app.SignUpPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:background="@drawable/black_background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/SignUpLogoImg"
+                    android:layout_width="240dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/exercise"/>
+
+                <EditText
+                    android:id="@+id/SignupPageEmailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:padding="8dp"
+                    android:hint="Email"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="22dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#666"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/email"
+                    android:layout_marginTop="15dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/SignupPagePassword1Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="8dp"
+                        android:hint="Password"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="22dp"
+                        android:textColor="#fff"
+                        android:textColorHint="#666"
+                        android:maxLines="1"
+                        android:drawableLeft="@drawable/lock"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/SignupPagePassword1Eye"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/visibility_on"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="SignupPassword1Visibility"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/SignupPagePassword2Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="12dp"
+                        android:padding="8dp"
+                        android:hint="Retype Password"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="22dp"
+                        android:textColor="#fff"
+                        android:textColorHint="#666"
+                        android:maxLines="1"
+                        android:drawableLeft="@drawable/lock"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/SignupPagePassword2Eye"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/visibility_on"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:onClick="SignupPassword2Visibility"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+
+                <Button
+                    android:id="@+id/SignupPageSignupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:layout_marginTop="30dp"
+                    android:onClick="SignupUser"/>
+
+                <Button
+                    android:id="@+id/SignupPageVerifyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Send verification email"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:clickable="true"
+                    android:layout_marginTop="-50dp"
+                    android:onClick="VerifyUser"/>
+
+                <Button
+                    android:id="@+id/SignupPageSigninBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_background"
+                    android:fontFamily="@font/segoepr"
+                    android:textSize="20dp"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="#0f0582"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="SigninUser"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
